@@ -40,11 +40,8 @@
 
         var geometry = new THREE.CubeGeometry(300,300,300);
         var loader = new THREE.TextureLoader();
-        var material = new THREE.MeshBasicMaterial({map:loader.load("cube.png")});
+        var material = new THREE.MeshBasicMaterial({map:loader.load("afafkss.github.io.3d-cube")});
 
-        for(i = 0;i < geometry.faces.length;i++){
-        	geometry.faces[i].color.setRGB(Math.random(),Math.random(),Math.random());
-        }
         var mesh = new THREE.Mesh(geometry,material);
 
         scene.add(mesh);
